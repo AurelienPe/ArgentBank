@@ -3,7 +3,6 @@ import chat_icon from '../../img/icon-chat.png'
 import money_icon from '../../img/icon-money.png'
 import security_icon from '../../img/icon-security.png'
 
-
 const Home = () => {
   return (
     <main>
