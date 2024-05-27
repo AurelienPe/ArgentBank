@@ -3,17 +3,16 @@ import nav_logo from '../../img/argentBankLogo.png'
 
 const Nav = () => {
   return (
-    <nav class="main-nav">
-      <a class="main-nav-logo" href="/">
+    <nav>
+      <a href="/">
         <img
-          class="main-nav-logo-image"
           src={nav_logo}
           alt="Argent Bank Logo"
         />
-        <h1 class="sr-only">Argent Bank</h1>
+        <h1>Argent Bank</h1>
       </a>
       <div>
-        <a class="main-nav-item" href="/login">
+        <a href="/login">
           <i class="fa fa-user-circle"></i>
           Sign In
         </a>
