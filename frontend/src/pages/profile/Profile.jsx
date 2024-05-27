@@ -1,4 +1,6 @@
 import './profile.css'
+import Account from '../../components/account/account'
+import accountData from '../../data/account.json'
 
 const Profile = () => {
   return (
@@ -8,36 +10,16 @@ const Profile = () => {
         <button class="edit-button">Edit Name</button>
       </div>
       <h2 class="sr-only">Accounts</h2>
-      <section class="account">
-        <div class="account-content-wrapper">
-          <h3 class="account-title">Argent Bank Checking (x8349)</h3>
-          <p class="account-amount">$2,082.79</p>
-          <p class="account-amount-description">Available Balance</p>
-        </div>
-        <div class="account-content-wrapper cta">
-          <button class="transaction-button">View transactions</button>
-        </div>
-      </section>
-      <section class="account">
-        <div class="account-content-wrapper">
-          <h3 class="account-title">Argent Bank Savings (x6712)</h3>
-          <p class="account-amount">$10,928.42</p>
-          <p class="account-amount-description">Available Balance</p>
-        </div>
-        <div class="account-content-wrapper cta">
-          <button class="transaction-button">View transactions</button>
-        </div>
-      </section>
-      <section class="account">
-        <div class="account-content-wrapper">
-          <h3 class="account-title">Argent Bank Credit Card (x8349)</h3>
-          <p class="account-amount">$184.30</p>
-          <p class="account-amount-description">Current Balance</p>
-        </div>
-        <div class="account-content-wrapper cta">
-          <button class="transaction-button">View transactions</button>
-        </div>
-      </section>
+
+      {accountData.map((account, index) => (
+        <Account
+          key={index}
+          title={account.title}
+          amount={account.amount}
+          description={account.description}
+          transaction={account.transaction}
+        />
+      ))} 
     </main>
   )
 }

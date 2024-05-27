@@ -48,12 +48,7 @@
 
   .hero-content p:last-child {
     font-size: 1.2rem;
-  }
 }
-
-.features {
-  display: flex;
-  flex-direction: row;
 }
 
 figure img {
