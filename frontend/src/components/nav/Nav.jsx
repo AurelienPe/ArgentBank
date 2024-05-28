@@ -1,5 +1,5 @@
 import './nav.css'
-import nav_logo from '../../img/argentBankLogo.png'
+import nav_logo from '../../img/argentBankLogo.webp'
 
 const Nav = () => {
   return (
