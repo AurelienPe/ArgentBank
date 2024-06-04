@@ -1,15 +1,15 @@
 import './account.css';
 
-function Account({title, amount, description}) {
+function Account({title, amount, description }) {
   return (
     <section class="account">
-      <div class="account-content-wrapper">
-        <h3 class="account-title">{title}</h3>
-        <p class="account-amount">{amount}</p>
-        <p class="account-amount-description">{description}</p>
-      </div>
+      <header class="account-content-wrapper">
+        <h3>{title}</h3>
+        <b>{amount}</b>
+        <p>{description}</p>
+      </header>
       <div class="account-content-wrapper cta">
-        <button class="transaction-button">View transactions</button>
+        <button>View transactions</button>
       </div>
     </section>
   )
