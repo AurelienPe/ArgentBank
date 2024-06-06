@@ -12,20 +12,18 @@ const Home = () => {
   }
 
   return (
-    <body>
-      <main>
-        <div class="hero">
-          <section class="hero-content">
-            <h2 class="sr-only">Promoted Content</h2>
-            <p>No fees.</p>
-            <p>No minimum deposit.</p>
-            <p>High interest rates.</p>
-            <p>Open a savings account with Argent Bank today!</p>
-          </section>
-        </div>
+    <main>
+      <div class="hero">
+        <section class="hero-content">
+          <h2 class="sr-only">Promoted Content</h2>
+          <p>No fees.</p>
+          <p>No minimum deposit.</p>
+          <p>High interest rates.</p>
+          <p>Open a savings account with Argent Bank today!</p>
+        </section>
+      </div>
 
-        <section class="features">
-
+      <section class="features">
         {features.map((feature) => (
           <Feature
             key={feature.title}
@@ -36,9 +34,9 @@ const Home = () => {
           />
         ))}
 
-        </section>
-      </main>
-    </body>
+      </section>
+    </main>
+
   )
 }
 

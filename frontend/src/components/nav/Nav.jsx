@@ -42,10 +42,9 @@ const Nav = () => {
             </a>
           </li>
           <li>
-            <i class="fa fa-user-circle"></i>
             <a href="/" onClick={handleLogout}>
               <i class="fa fa-sign-out"></i>
-              Sign Out
+              <p>Sign Out</p>
             </a>
           </li>
           </ul>

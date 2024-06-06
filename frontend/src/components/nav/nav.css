@@ -49,3 +49,16 @@ nav img {
   max-width: 100%;
   width: 200px;
 }
+
+nav i {
+  padding-right: 4px;
+}
+
+nav p {
+  margin : 2px 0;
+}
+
+nav ul{
+  display: flex;
+  gap: 10px;
+}
