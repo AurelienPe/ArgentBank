@@ -244,29 +244,28 @@ definitions:
   Account:
     type: object
     properties:
-      date:
-        type: string
-      id:
-        type: string
-      name:
+      accountId:
         type: string
       balance:
         type: number
-      transaction:  
+      transactions:
         type: array
         items:
           $ref: '#/definitions/Transaction'
   Transaction:
     type: object
     properties:
-      fromAccountId:
+      id:
         type: string
-      toAccountId:
+      date:
+        type: string
+        format: date
+      description:
         type: string
       amount:
         type: number
-      description:
-        type: string
+      balance:
+        type: number
   SpecificTransaction:
     type: object
     properties:
@@ -278,7 +277,7 @@ definitions:
       description:
         type: string
       amount:
-        type: string
+        type: number
       balance:
         type: number
       type:
