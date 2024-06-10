@@ -5,12 +5,6 @@ import './index.css';
 import { Provider, useSelector } from 'react-redux';
 import { store } from './redux/store';
 import App from './App';
-{/*import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Home from './pages/home/Home'
-import Footer from './components/footer/Footer'
-import Nav from './components/nav/Nav'
-import Login from './pages/login/Login'
-import Profile from './pages/profile/Profile'*/}
 
 
 
@@ -18,16 +12,5 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
     <App />
-    {/*<React.StrictMode>
-      <BrowserRouter>
-        <Nav />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/profile" element={<Profile />}/>
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </React.StrictMode>*/}
   </Provider>
 );
