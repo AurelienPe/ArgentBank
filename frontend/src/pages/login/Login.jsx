@@ -24,7 +24,6 @@ const Login = () => {
 
     try {
       dispatch(login({ email, password, rememberMe }));
-      console.log("sumbited :", email, password, rememberMe)
       setTimeout(() => {
         navigate('/profile');
       }, 500)
