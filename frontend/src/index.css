@@ -33,3 +33,17 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.bg-dark {
+  background-color: #12002b;
+}
+
+main {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex: 1.1;
+  }
+}

@@ -1,4 +1,4 @@
-.hero {
+.home {
   background-image: url('../../img/bank-tree.jpeg');
   background-position: 0 -50px;
   background-size: cover;
@@ -28,8 +28,8 @@
   font-size: 0.9rem;
 }
 
-@media (min-width: 920px) {
-  .hero {
+@media (min-width: 768px) {
+  .home {
     height: 400px;
     background-position: 0% 33%;
   }
@@ -49,23 +49,4 @@
   .hero-content p:last-child {
     font-size: 1.2rem;
   }
-}
-
-figure img {
-  width: 100px;
-  border: 10px solid #00bc77;
-  border-radius: 50%;
-  padding: 1rem;
-}
-
-figure {
-  flex: 1;
-  padding: 2.5rem;
-}
-
-figure h3{
-  color: #222;
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
 }

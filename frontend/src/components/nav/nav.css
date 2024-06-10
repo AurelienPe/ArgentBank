@@ -20,6 +20,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
+  font-size: 0.8rem;
 }
 
 nav a {
@@ -47,7 +48,7 @@ nav a:first-child {
 
 nav img {
   max-width: 100%;
-  width: 200px;
+  width: 130px;
 }
 
 nav i {
@@ -60,5 +61,23 @@ nav p {
 
 nav ul{
   display: flex;
+  align-items: center;
   gap: 10px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    font-size: 1rem;
+  }
+
+  nav img {
+    max-width: 100%;
+    width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    font-size: 1.2rem;
+  }
 }

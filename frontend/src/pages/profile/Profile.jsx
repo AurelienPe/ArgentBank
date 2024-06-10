@@ -33,14 +33,14 @@ const Profile = () => {
   };
 
   return (
-    <main class="main bg-dark">
-      {!editing ? (
-      <header class="header">
-        <h1>Welcome back<br />{user.firstName} {user.lastName}!</h1> 
-        <button onClick={edit} class="edit-button">Edit Name</button>
+    <main class="profile bg-dark">
+      {!editing ? ( 
+      <header>
+        <h1>Welcome back<br />{user.firstName} {user.lastName}!</h1>
+        <button onClick={edit}>Edit Name</button>
       </header>
       ) : (
-        <form className='profil-header' onSubmit={save}>
+        <form onSubmit={save}>
           <p>Edit user name</p>
 
           <label htmlFor="userName">User name :</label>

@@ -13,9 +13,8 @@ const Home = () => {
 
   return (
     <main>
-      <div class="hero">
+      <div class="home">
         <section class="hero-content">
-          <h2 class="sr-only">Promoted Content</h2>
           <p>No fees.</p>
           <p>No minimum deposit.</p>
           <p>High interest rates.</p>
